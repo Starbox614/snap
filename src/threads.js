@@ -9,6 +9,8 @@
     written by Jens Mönig
     jens@moenig.org
 
+    (and slightly modified by Starbox614)
+
     Copyright (C) 2023 by Jens Mönig
 
     This file is part of Snap!.
@@ -607,7 +609,7 @@ Process.prototype.enableLiveCoding = false; // experimental
 Process.prototype.enableSingleStepping = false;
 Process.prototype.enableCompiling = false; // experimental
 Process.prototype.flashTime = 0;
-Process.prototype.enableJS = false;
+Process.prototype.enableJS = true; // changed to true by Starbox614
 
 function Process(topBlock, receiver, onComplete, yieldFirst) {
     this.topBlock = topBlock || null;
